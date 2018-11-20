@@ -48,8 +48,8 @@ int dijkstra(int s, int t) {
         if (curr == t) return dist[curr];
 
         for (int i = 0; i < g[curr].size(); ++i) {
-            int next = g[curr][i].first;
-            int d    = g[curr][i].second;
+            int d    = g[curr][i].first;
+            int next = g[curr][i].second;
 
             // relax
             if (dist[next] > dist[curr] + d) {
